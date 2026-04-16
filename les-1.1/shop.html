@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Cars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/bmwlogo.png" alt="BMW Logo" class="logoimg" /></a>
+            <a href="index.html"><img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimg" /></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html#">Home</a>
+            <a href="index.html#history">History</a>
+            <a href="index.html#service">Service</a>
+            <a href="shop.html#">Shop</a>
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+        <div class="cart-icon">
+            <a href="shoppingcart.html" class="cart-link" aria-label="Open shopping cart">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 4h2l1.2 6.1a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L19 6H7.4" />
+                    <circle cx="10" cy="19" r="1.5" />
+                    <circle cx="17" cy="19" r="1.5" />
+                </svg>
+            </a>
+            <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <!-- Shop Header / Search & Filters -->
+    <section class="shop-header">
+        <h1>Shop Our Cars</h1>
+        <div class="search-filter-container">
+            <input type="text" id="searchInput" placeholder="Search cars..." />
+
+            <div class="filter-group" id="typeFilter">
+                <button data-type="">All</button>
+                <button data-type="sedan">Sedan</button>
+                <button data-type="suv">SUV</button>
+                <button data-type="coupe">Coupe</button>
+                <button data-type="convertible">Convertible</button>
+            </div>
+
+            <div class="filter-group" id="powerFilter">
+                <button data-power="">Any Power</button>
+                <button data-power="300">Below 300hp</button>
+                <button data-power="500">Above 500hp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Grid -->
+    <section class="car-grid">
+        <div id="carsContainer" class="cars">
+            <!-- Car items will be injected by JS -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logos">
+                    <img src="images/bmwlogo.png" alt="BMW Logo" class="logoimgfooter" />
+                    <img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimgfooter" />
+                </div>
+                <p>BMW delivers precision, performance, and luxury, creating unforgettable driving experiences every
+                    journey.</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Overview</li>
+                    <li>Performance</li>
+                    <li>Technology & Safety</li>
+                    <li>Comparison</li>
+                    <li>Testimonials</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <ul>
+                    <li>+880 1774-807785</li>
+                    <li>sandipuxlab@gmail.com</li>
+                    <li>Sonadanga, Khulna</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Your Driving News Source</h2>
+                <p>Subscribe today for exclusive news, offers, and performance updates.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your Email Address" />
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tygo Poortman - All rights reserved</p>
+            <div class="privacy-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shop.js" defer></script>
+</body>
+
+</html>

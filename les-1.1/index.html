@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <section class="top-section">
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="m-stripes">
+        <div class="stripe blue-light"></div>
+        <div class="stripe blue-dark"></div>
+        <div class="stripe red"></div>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="images/bmwlogo.png" alt="BMW Logo" class="logoimg" /></a>
+            <a href="index.html"><img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimg" /></a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#history">History</a>
+        <a href="index.html#service">Service</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#contact">Contact</a>
+        
+      </nav>
+      <div class="cart-icon">
+                <a href="shoppingcart.html" class="cart-link" aria-label="Open shopping cart">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 4h2l1.2 6.1a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L19 6H7.4" />
+                        <circle cx="10" cy="19" r="1.5" />
+                        <circle cx="17" cy="19" r="1.5" />
+                    </svg>
+                </a>
+                <span id="cartCount">0</span>
+            </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>
+        <span class="herospan">The BMW M4: </span><span class="herospan2">Power That Never Hesitates.</span>
+      </h1>
+
+      <p>
+        Experience the BMW M4: unmatched power, precision engineering, and
+        adrenaline-packed performance.
+      </p>
+
+      <img src="bmw (2).jpg" class="hero-car" />
+
+      <div class="hero-stats opposite">
+        <div>
+          <h2>3.4 sec</h2>
+          <p>0-100 km/h</p>
+        </div>
+
+        <div>
+          <h2>3.0L I6</h2>
+          <p>Engine</p>
+        </div>
+
+        <div>
+          <h2>551 hp</h2>
+          <p>Power</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Specifications Section -->
+  <section class="specs">
+    <h2>Specifications</h2>
+    <div class="specs-container">
+      <!-- Specs text -->
+      <div class="spec-list">
+        <div class="spec-tabs">
+          <span class="active">Engine</span>
+          <span>Transmission</span>
+          <span>Dynamics</span>
+          <span>Safety</span>
+        </div>
+
+        <div class="spec-row">
+          <span>TYPE</span>
+          <span>Inline-6</span>
+        </div>
+
+        <div class="spec-row">
+          <span>DISPLACEMENT</span>
+          <span>3.0L (2979 cc)</span>
+        </div>
+
+        <div class="spec-row">
+          <span>COMPRESSION RATIO</span>
+          <span>10.2:1</span>
+        </div>
+
+        <div class="spec-row">
+          <span>MAX POWER</span>
+          <span>425 hp @ 5,500–7,300 rpm</span>
+        </div>
+
+        <div class="spec-row">
+          <span>MAX TORQUE</span>
+          <span>550 Nm @ 1,850–5,500 rpm</span>
+        </div>
+
+        <div class="spec-row">
+          <span>REDLINE</span>
+          <span>7,600 rpm</span>
+        </div>
+      </div>
+      <!-- Engine image with single color background -->
+      <div class="engine-wrapper">
+        <div class="engine-background-stripes"></div>
+        <img src="images/bmwengine.png" class="engine-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 360 CAR SELECTOR -->
+  <section class="car-select">
+    <!-- Top Navigation -->
+    <div class="car-select-nav">
+      <span class="active">Customize colors</span>
+    </div>
+
+    <!-- Car Display Area -->
+    <div class="car-display">
+      <div class="car-carousel">
+        <div class="car-item" data-color="white">
+          <img src="images/car-white.png" />
+        </div>
+        <div class="car-item" data-color="green">
+          <img src="images/car-green.png" />
+        </div>
+        <div class="car-item" data-color="red">
+          <img src="images/car-red.png" />
+        </div>
+        <div class="car-item" data-color="gray">
+          <img src="images/car-gray.png" />
+        </div>
+        <div class="car-item" data-color="blue">
+          <img src="images/car-blue.png" />
+        </div>
+        <div class="car-item" data-color="yellow">
+          <img src="images/car-yellow.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Controls -->
+    <div class="car-controls">
+      <!-- Model Selector -->
+      <div class="model-selector">
+        <button type="button">‹</button>
+        <span>BMW M4</span>
+        <button type="button">›</button>
+      </div>
+
+      <!-- Color Selector -->
+      <div class="color-selector">
+        <div class="color-controls">
+          <button type="button" class="color-nav-btn">‹</button>
+          <div class="colors">
+            <button data-color="white" class="active"></button>
+            <button data-color="green"></button>
+            <button data-color="red"></button>
+            <button data-color="gray"></button>
+            <button data-color="blue"></button>
+            <button data-color="yellow"></button>
+          </div>
+          <button type="button" class="color-nav-btn">›</button>
+        </div>
+        <p class="color-tagline">Elegance perfected in every shade.</p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="select-btn">Select</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL PERFORMANCE -->
+  <section class="digital-performance" id="history">
+    <div class="digital-top">
+      <img src="images/bmw-autumn.png" class="digital-car" />
+
+      <div class="digital-box">
+        <h2>Digital Performance Engineering</h2>
+        <a href="#">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="digital-bottom">
+      <div class="digital-text">
+        <h2>Smart Technology. Confident Control.</h2>
+
+        <p>
+          The BMW M4’s digital cockpit and infotainment deliver seamless
+          connectivity, intuitive controls, and real-time driving information.
+          Intelligent safety systems enhance every drive with advanced
+          assistance, improved visibility, and real-time monitoring.
+        </p>
+
+        <div class="digital-features">
+          <div class="feature">
+            🚗 <span>Seamless CarPlay Connectivity</span>
+          </div>
+
+          <div class="feature">🛡 <span>Top Safety Ratings</span></div>
+
+          <div class="feature">⚙ <span>Advanced Driver Assistance</span></div>
+        </div>
+      </div>
+
+      <img src="images/bmw-wheeel (1).jpg" class="digital-interior" />
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <img src="images/wheel.png" class="bg-wheel wheel-left" />
+    <img src="images/wheel.png" class="bg-wheel wheel-right" />
+
+    <h2>Performance, Personally Experienced</h2>
+
+    <p class="testimonial-sub">
+      Performance isn't just engineered, it's personally experienced through
+      every acceleration, corner, and moment behind the wheel.
+    </p>
+
+    <div class="testimonial-container">
+      <button class="arrow left">❮</button>
+
+      <div class="testimonial-card">
+        <img src="images/person.jpg" class="person" />
+
+        <div class="testimonial-text">
+          <div class="quote">“</div>
+
+          <p>
+            This car combines thrilling performance, precise handling, and
+            refined luxury. Advanced technology and driver-focused engineering
+            deliver a confident and unforgettable driving experience.
+          </p>
+
+          <div class="stars">★★★★★</div>
+
+          <h4>Alex Morgan</h4>
+          <span>Automotive Journalist</span>
+        </div>
+      </div>
+
+      <button class="arrow right">❯</button>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison">
+    <h2>Experience Differences, Feel Thrill.</h2>
+    <p class="compare-sub">
+      Compare every detail, from performance to design, and feel unmatched
+      driving excitement.
+    </p>
+
+    <div class="cars">
+  <!-- BMW -->
+  <div class="car card">
+    <div class="car-media">
+      <!-- Optional fallback image -->
+      <img src="images/bmw-m4-g82 (2).png" alt="BMW M4 G82" />
+      <video src="images/bmw-m4-g82.mp4" class="car-video" autoplay muted loop playsinline></video>
+      <button class="mute-btn">🔇</button> <!-- Mute/Unmute button -->
+
+      <!-- Text on top -->
+      <div class="card-content">
+        <h3>BMW M4 (G82)</h3>
+
+        <div class="spec-grid">
+          <div><span>Engine Type</span><p>3.0L Twin-Turbo Inline-6</p></div>
+          <div><span>Horsepower</span><p>473-503 hp</p></div>
+          <div><span>Torque</span><p>550-650 Nm</p></div>
+          <div><span>0-100 km/h</span><p>3.8-4.0 sec</p></div>
+        </div>
+
+        <div class="price">
+          <span>Base price</span>
+          <p>$81,300</p>
+        </div>
+
+        <button>Build</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMG -->
+  <div class="car card">
+    <div class="car-media">
+      <img src="images/bmw-m5-comp.png" alt="Mercedes AMG C63" />
+      <video src="images/bmw-m5-comp.mp4"  muted preload="metadata" playsinline></video>
+      <button class="mute-btn">🔇</button> <!-- Mute/Unmute button -->
+
+      <div class="card-content">
+        <h3>BMW M5 Competition</h3>
+
+        <div class="spec-grid">
+          <div><span>Engine Type</span><p>4.4L Twin-Turbo V8</p></div>
+          <div><span>Horsepower</span><p>600-625 hp</p></div>
+          <div><span>Torque</span><p>750 Nm</p></div>
+          <div><span>0-100 km/h</span><p>3.3 - 3.4 sec</p></div>
+        </div>
+
+        <div class="price">
+          <span>Base price</span>
+          <p>$88,000</p>
+        </div>
+
+        <button>Build</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Clarity That Drives Better Decisions</h2>
+
+    <div class="question">
+      <h4>What makes the driving experience unique?</h4>
+    </div>
+
+    <div class="question">
+      <h4>How advanced is the safety technology?</h4>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <!-- Logo and Description Section -->
+    <div class="footer-section">
+      <div class="logos">
+        <a href="index.html"><img src="images/bmwlogo.png" alt="BMW Logo" class="logoimg" /></a>
+            <a href="index.html"><img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimg" /></a>
+      </div>
+      <p>BMW delivers precision, performance, and luxury, creating unforgettable driving experiences every journey.</p>
+    </div>
+    
+    <!-- Services Links -->
+    <div class="footer-section">
+      <h2>Services</h2>
+      <ul>
+        <li>Overview</li>
+        <li>Performance</li>
+        <li>Technology & Safety</li>
+        <li>Comparison</li>
+        <li>Testimonials</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="footer-section" id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>+880 1774-807785</li>
+        <li>sandipuxlab@gmail.com</li>
+        <li>Sonadanga, Khulna</li>
+      </ul>
+    </div>
+    
+    <!-- News & Subscription -->
+    <div class="footer-section">
+      <h2>Your Driving News Source</h2>
+      <p>Subscribe today for exclusive news, offers, and performance updates.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your Email Address" />
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tygo Poortman - All rights reserved</p>
+    <div class="privacy-links">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

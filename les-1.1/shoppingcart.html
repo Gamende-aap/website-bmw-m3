@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - BMW</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shoppingcart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="cart-page">
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/bmwlogo.png" alt="BMW Logo" class="logoimg" /></a>
+            <a href="index.html"><img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimg" /></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#history">History</a>
+            <a href="index.html#service">Service</a>
+            <a href="shop.html">Shop</a>
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+        <div class="cart-icon">
+            <a href="shoppingcart.html" class="cart-link" aria-label="Open shopping cart">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 4h2l1.2 6.1a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L19 6H7.4" />
+                    <circle cx="10" cy="19" r="1.5" />
+                    <circle cx="17" cy="19" r="1.5" />
+                </svg>
+            </a>
+            <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <section class="cart-header">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected BMW models, adjust quantities, and continue to checkout with the same premium look as
+            the rest of the site.</p>
+    </section>
+
+    <main class="cart-layout">
+        <section class="cart-panel">
+            <div class="cart-title-row">
+                <h2>Selected Cars</h2>
+                <p class="subtle-text" id="cartStatus">Loading your cart...</p>
+            </div>
+
+            <div id="cartItems" class="cart-items"></div>
+        </section>
+
+        <aside class="summary-panel">
+            <h2>Order Summary</h2>
+            <div class="summary-lines">
+                <div class="summary-line">
+                    <span>Items</span>
+                    <span id="summaryItems">0</span>
+                </div>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="summarySubtotal">EUR 0</span>
+                </div>
+                <div class="summary-line">
+                    <span>Delivery</span>
+                    <span id="summaryDelivery">Free</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="summaryTotal">EUR 0</span>
+                </div>
+            </div>
+
+            <div class="summary-actions">
+                <a href="shop.html" class="primary-link">Continue Shopping</a>
+                <button type="button" id="clearCartButton" class="secondary-button">Clear Cart</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logos">
+                    <img src="images/bmwlogo.png" alt="BMW Logo" class="logoimgfooter" />
+                    <img src="images/bmwmlogo.png" alt="BMW M Logo" class="logomimgfooter" />
+                </div>
+                <p>BMW delivers precision, performance, and luxury, creating unforgettable driving experiences every
+                    journey.</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Overview</li>
+                    <li>Performance</li>
+                    <li>Technology & Safety</li>
+                    <li>Comparison</li>
+                    <li>Testimonials</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <ul>
+                    <li>+880 1774-807785</li>
+                    <li>sandipuxlab@gmail.com</li>
+                    <li>Sonadanga, Khulna</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Your Driving News Source</h2>
+                <p>Subscribe today for exclusive news, offers, and performance updates.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your Email Address" />
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tygo Poortman - All rights reserved</p>
+            <div class="privacy-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shoppingcart.js" defer></script>
+</body>
+
+</html>
